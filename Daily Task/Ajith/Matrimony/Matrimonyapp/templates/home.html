@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    {% load static %}
+    <link href="{% static 'css/home.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form action="/login" class="form1">
+          <div class="row1">
+               <h2>Bakiyam Matrimony</h2>
+               <input type="submit" value="LOGIN">
+          </div>
+        </form>
+        <form action="/adminlogin" class="form2">
+            <div class="row1">
+                 <h2>Admin</h2>
+                 <input type="submit" value="LOGIN">
+            </div>
+          </form>
+          <form action="/driverlogin" class="form3">
+            <div class="row1">
+                 <h2>Driver Registration</h2>
+                 <input type="submit" value="LOGIN">
+            </div>
+          </form>
+
+    </div>
+</body>
+</html>

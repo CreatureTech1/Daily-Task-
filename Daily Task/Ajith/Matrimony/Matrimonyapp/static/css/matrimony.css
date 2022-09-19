@@ -1,0 +1,133 @@
+.container{
+    border: 1px solid black;
+}
+.img1{
+    height: 130px;
+    width: 110px;
+    margin-left: 20px;
+}
+.img2{
+
+    height: 130px;
+    width: 110px;
+}
+.img3{
+    height: 100px;
+    width: 100px;
+    margin-left: 360px;
+}
+.p1{
+    float: right;
+    margin-right: 29px;
+
+
+}
+.p2{
+    float: right;
+    margin-top: 35px;
+    margin-right: -110px;
+
+
+}
+.p3{
+    float: right;
+    margin-top: 50px;
+    margin-right:-110px;
+
+}
+.p4{
+    float: right;
+    margin-top: 65px;
+    margin-right:-208px;
+
+}
+h1{
+
+    font-size: 80px;
+    font-style:italic;
+    margin-left: 200px;
+    margin-top: -10px;
+    color: deeppink;
+    font-weight: bolder;
+}
+.p5{
+    font-size: 25px;
+    margin-left: 250px;
+    margin-top: -60px;
+}
+.row{
+    border: 1px solid black;
+    width: 600px;
+    height: 30px;
+}
+.column1{
+    border: 1px solid black;
+    width: 200px;
+    height: 30px;
+
+}
+.row-1{
+    border: 1px solid black;
+    height: 50px;
+    width: 300px;
+};
+.column2,.column6,.column10,.column14{
+    border: 1px solid black;
+    width: 75px;
+    height: 50px;
+}
+.column3,.column15{
+    border: 1px solid black;
+    width: 75px;
+    margin-left: 75px;
+    margin-top: -2px;
+    height: 50px;
+}
+.column4,.column16{
+    border: 1px solid black;
+    width: 75px;
+    margin-left: 150px;
+    margin-top: -50.8px;
+    height: 50px;
+}
+.column5,.column9,.column13,.column17{
+    border: 1px solid black;
+    width: 75px;
+    margin-left: 225px;
+    margin-top: -53px;
+    height: 50px;
+}
+.column6{
+    border: 1px solid black;
+    width: 75px;
+    height: 50px;
+}
+.column10{
+    border: 1px solid black;
+    width: 75px;
+    height: 50px;
+}
+.column15{
+    margin-top: -23px;
+}
+.column20{
+    width: 50px;
+}
+.first{
+    margin-left: 350px;
+    margin-top: -207px;
+}
+.img4{
+    margin-left: 700px;
+    width: 500px;
+    height: 500px;
+    margin-top: -800px;
+}
+.hh{
+    margin-left: 800px;
+    margin-top: -270px;
+}
+.h5{
+    margin-left: 1000px;
+    margin-top: -260px;
+}
