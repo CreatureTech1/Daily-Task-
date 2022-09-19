@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        {% load static %}
+    </title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    <form action='index1.html' method="POST">
+         {% csrf_token %}
+         {{ form.as_p }}
+            <button>Submit</button>
+       <a href="index.html" target="_blank"> <input type="button" value="Login"></a>
+    </form>
+    
+</body>
+</html>
