@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+nav{
+    text-align: center;
+    text-decoration: none;
+    background-color: aqua;
+    margin-top: 50px;
+
+
+}
+nav ul{
+    display: inline-flex;
+    list-style: none;
+    color:deeppink;
+    height: 60px;
+    font-size: 30px;
+
+}
+nav ul li{
+    width: 200px;
+    padding: 10px 40px 0px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+nav ul li:hover{
+    background: yellow;
+    border-radius: 4px;
+}
+.city{
+    margin-top: 40px;
+}
+select{
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+}
+.city1{
+    margin-left: 600px;
+    margin-top: -119px;
+}
+.date{
+    margin-top: 50px;
+}
+.member{
+    margin-left: 300px;
+    margin-top: -70px;
+}
+.member1{
+    margin-left: 600px;
+    margin-top: -75px;
+}
+.search{
+    margin: 50px;
+    margin-left: 300px;
+}
+.search input{
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    background: deeppink;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
