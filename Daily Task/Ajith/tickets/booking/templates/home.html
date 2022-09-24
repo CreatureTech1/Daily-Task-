@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bustickets</title>
+    {% load static %}
+    <link href="{% static 'css/home.css' %}" rel="stylesheet">
+</head>
+<body>
+   <form action="/page1">
+    <div class="container">
+        <div class="from">
+            <label>FROM</label><br><br>
+            <select required>
+                <option value=""></option>
+                <option value="">CHENNAI</option>
+                <option value="">SALEM</option>
+                <option value="">COIMBATORE</option>
+                <option value="">MADURAI</option>
+                <option value="">TRICHY</option>
+                <option value="">DINDUGAL</option>
+                <option value="">MARTHANDAM</option>
+            </select>
+        </div>
+        <div class="to">
+            <label>TO</label><br><br>
+            <select required>
+                <option value=""></option>
+                <option value="">CHENNAI</option>
+                <option value="">SALEM</option>
+                <option value="">COIMBATORE</option>
+                <option value="">MADURAI</option>
+                <option value="">TRICHY</option>
+                <option value="">DINDUGAL</option>
+                <option value="">MARTHANDAM</option>
+            </select>
+        </div>
+        <div class="date">
+            <label>DATE</label><br><br>
+             <input type="date" required>
+        </div><br><br><br><br>
+        <input type="submit" value="SEARCH" class="submit">
+    </div>
+   </form>
+</body>
+</html>

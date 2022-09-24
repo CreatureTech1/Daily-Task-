@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+
+
+}
+.container{
+    width: 1000px;
+    height: 200px;
+    box-sizing: border-box;
+    border: none;
+    margin-left: 130px;
+    margin-top: 130px;
+    box-shadow: 4px 8px 16px 4px rgba(0, 0.3, 0, 0.3);
+    background: aliceblue;
+    outline: none;
+
+
+}
+label{
+    font-size: 30px;
+}
+select{
+     width: 250px;
+     height: 60px;
+     border: 2px solid rgb(8, 182, 235);
+
+}
+.to{
+    margin-left: 400px;
+    margin-top: -115px;
+}
+.date{
+    margin-left: 800px;
+    margin-top: -115px;
+}
+.date input{
+    width: 150px;
+    height: 50px;
+}
+.submit{
+    margin-left: 460px;
+    margin-bottom: -100px;
+    background: rgb(8, 203, 237);
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    color: aliceblue;
+    border: none;
+    font-size: 20px;
+
+}
