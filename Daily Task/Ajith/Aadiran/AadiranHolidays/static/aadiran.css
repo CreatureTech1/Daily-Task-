@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.btn .btn-success{
+   margin-left: 700px;
+}
+.container{
+
+   width: 500px;
+   height: 92px;
+   margin-top: 50px;
+   box-sizing: border-box;
+   box-shadow: 4px 8px 16px 8px rgba(0, 0, 0, 0.3);
+   border-radius: 10px;
+
+}
+ul{
+    position: absolute;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    position: relative;
+    display: block;
+    padding: 10px 29px;
+    text-decoration: none;
+    color: #262626;
+    font-weight: bold;
+}
