@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+       {% block  content %}
+               <from action="list" atocomplete="off">
+                <h1>vehicle registation form</h1>
+                 NAME <input type="text" name="NAME>" <br><br>
+                 MAILID <input type="text" name="MAILID"> <br><br>
+                 MOBILENO <input type="'text" name="MOBILENO"> <br><br>
+                 ADDRESS <input type="text" name="ADDRESS"> <br><br>
+                 REGISTRATION NO <input type="text" name="REGISTRATION NO"> <br><br>
+                 MODEL <input type="text" name="model"> <br><br>
+                 COLOUR<input type="text" name="colour"> <br><br>
+                 YEAR <input type="text" name="YEAR"> <br><br>
+                </from>
+            {% endblock %}
+        <input type="submit"  value="login to register" > 
+     </body>
+</html>

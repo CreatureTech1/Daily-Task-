@@ -1,0 +1,8 @@
+{% extends 'home.html' %}
+{% block content %}
+<h1>Create a new user</h1>
+<form method="Post">
+    {% csrf_token %}
+    {{form.as_P}}
+</from>
+{% endblock %}
