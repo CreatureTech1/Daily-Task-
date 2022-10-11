@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.phase1{
+    padding: 0;
+    width: 100%;
+    height: 900px;
+    background: red;
+}
+.phase1 iframe{
+    padding-top: 40px;
+    margin-left: 40px;
+    height: 800px;
+    width: 600px;
+}
+.phase1 .login{
+
+    width: 500px;
+    height: 700px;
+    float: right;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+.phase1 .login h2{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.phase1 .login p{
+    font-size: 18px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+.phase1 .login form{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.phase1 .login form input[type=text]{
+    width: 90%;
+    height: 40px;
+    background: red;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+}
+.phase1 .login form input[type=email]{
+    width: 90%;
+    height: 40px;
+    background: red;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+}
+.phase1 .login form textarea{
+    width: 90%;
+
+    background: red;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+}
+.phase1 .login form input[type=submit]{
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    background: rgb(242, 255, 0);
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 140px;
+    cursor: pointer;
+}
+.phase1 .login form input[type=submit]:hover{
+    background: blue;
+    color: white;
+}
+
+.phase1 .login .text1 {
+
+    margin-top: 40px;
+    width: 300px;
+    height: 100px;
+}
+.phase1 .login .text1 small{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.phase1 .login .text1 h3{
+   margin-left: 30px;
+   margin-top: 10px;
+   font-size: 17px;
+   font-weight: bolder;
+}
+.phase1 .login .text1 span{
+    font-size: 15px;
+    margin-left:30px ;
+    margin-right: 150px;
+}
+.phase1 .login .text1 h4{
+    font-size: 15px;
+    margin-left:30px ;
+    margin-top: 20px;
+}
+.phase1 .login .text2 {
+
+    margin-left: 300px;
+    margin-top: -100px;
+    width: 250px;
+    height: 100px;
+}
+.phase1 .login .text2 small{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.phase1 .login .text2 span{
+    font-size: 15px;
+    margin-left:30px ;
+    margin-top: 20px;
+}

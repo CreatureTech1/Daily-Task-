@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creature</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+</head>
+<body>
+    <div class="container">
+        {% include 'header.html '%}
+        <div class="phase1">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7771.5222884427485!2d80.28283122109879!3d13.114312412102995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526f640d02cd81%3A0x3413a7cda4dfad1!2sWashermanpet%2C%20Chennai%2C%20Tamil%20Nadu%20600021!5e0!3m2!1sen!2sin!4v1665466641597!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             <div class="login">
+                 <h2>Let’s Talk</h2>
+                 <p>Send us a message and we’ll get back to you within 30 minutes!</p>
+                 <form action="">
+                    <label for="name">NAME</label><br>
+                    <input type="text" name="name" required><br><br>
+                    <label for="name">EMAIL</label><br>
+                    <input type="email" name="email" required><br><br>
+                    <label for="name">PHONE NUMBER</label><br>
+                    <input type="text" name="mobile"><br><br>
+                    <label for="name">MESSAGE</label><br>
+                    <textarea style="height:50px;"></textarea><br><br>
+                    <label for="name">TERMS & CONDITIONS</label><br><br>
+                    <input type="checkbox" required>I Accept The Terms & Conditions<br><br>
+                    <input type="submit" value="Get Free Proposal">
+                 </form>
+                 <div class="text1">
+                    <small>Visit Us</small>
+                    <h3>Creature Technologies Pvt Ltd</h3><br>
+                    <span>OldWashermanpet,Chennai,</span>
+                    <span>Tamilnadu.</span>
+                    <h4>Contact : 0000000000</h4>
+
+                 </div>
+                 <div class="text2">
+                    <small>Working Hours</small><br><br>
+                    <span>Mon-Sat:9.00 AM to 6.30 AM</span>
+               </div>
+             </div>
+
+        </div>
+        {% include 'base.html' %}
+    </div>
+</body>
+</html>
