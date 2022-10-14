@@ -1,0 +1,10 @@
+num1 = int(input("enter first integer"))
+num2 = int(input("enter second integer"))
+num3 = int(input("enter third integer"))
+a=min(num1, num2, num3)
+c=max(num1, num2, num3)
+b=(num1+num2+num3)-a-c
+print("the smallest number is:",a)
+print("the largest number is:",b)
+print("the middle number is:",c)
+print("the sorted number is:",a,b,c)
