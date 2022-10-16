@@ -1,0 +1,12 @@
+{% extends 'home.html' %}
+{% block head %}
+<title>hell0 world</title>
+{% endblock %}
+{% block body %}
+<h1> hello </h1>
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button> sumbit </button>
+</form>
+{% endblock %}
