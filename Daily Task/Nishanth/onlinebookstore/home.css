@@ -1,0 +1,208 @@
+html, body, div, span, applet, object, iframe,
+ h3,h2,h4,h5, h6,blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike,sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, input, button, textarea {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-weight: inherit;
+   font-style: inherit;
+   font-size: 100%;
+   vertical-align: baseline;
+   text-decoration:none;
+   color:#333;
+   text-align:center;
+   box-sizing:border-box;
+   font-family: 'Roboto', Arial, sans-serif;
+}
+
+body{
+	margin: 0;
+	min-width: 320px;
+	padding: 0;
+}
+
+.wrap{
+	width:100%;
+	max-width:1440px;
+	padding:0 30px;
+	box-sizing:border-box;
+	margin:0 auto;
+}
+#fixedheader{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background:#fff;
+	z-index:100;
+	min-width: 320px;
+}
+#headertop{
+	background:#333;
+	height:30px;
+}
+
+#headertop span{
+	color:#eee;
+	font-size:12px;
+	font-weight:700;
+	line-height:30px;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+#headertop .leftCol{
+	float:left;
+	text-align:left;
+}
+
+#headertop .rightCol{
+	float:right;
+	text-align:right;
+}
+#headertop .leftCol span{
+	margin-right:30px;
+}
+
+#headertop .rightCol span{
+	margin-left:15px;
+}
+
+#headertop span.myaccount{
+	max-width:150px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;	
+}
+
+#headermain{
+	padding:20px 0;
+	height:50px;
+	box-sizing:initial;
+	box-shadow: 0 0 3px #aaa;
+}
+
+#headermain .headerlogo{
+	float:left;
+}
+
+#headermain .rightCol{
+	float:right;
+	text-align:right;
+}
+
+#headermain .rightCol span{
+	margin-left:15px;
+	height:50px;
+	position:relative;
+	display:inline-block;
+	vertical-align:middle;
+	cursor:pointer;
+}
+#headermain .rightCol span{
+	margin-left:15px;
+	height:50px;
+	position:relative;
+	display:inline-block;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+#headermain .rightCol span font{
+	position:absolute;
+	right: -2px;
+	top: -5px;
+	background:#f2663a;
+	color:#fff;
+	width:20px;
+	height:20px;
+	border-radius:20px;
+	font-size:12px;
+	text-align:center;
+	font-weight:700;
+	line-height:20px
+}
+
+#headermain .searchtrigger{
+	background:url(https://s3.ap-south-1.amazonaws.com/storage.commonfolks.in/images/search-icon.png) no-repeat center;
+	background-size:contain;
+	width:41px;
+	display:none !important;
+}
+
+#headermain .cart{
+	background:url(https://s3.ap-south-1.amazonaws.com/storage.commonfolks.in/images/cart-icon.png) no-repeat center;
+	background-size:contain;
+	width:41px;
+}
+
+#headermain .searchdiv{
+	display:inline-block;
+	vertical-align:middle;
+	height:40px;
+	border:1px solid #777;
+	font-size:0;
+	overflow:hidden;
+}
+
+#headermain .searchdiv .searchinput{
+	width:250px;
+	height:40px;
+	border:none;
+	background:none;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	padding:0 5px;
+	font-size:14px;
+}
+#headermain .searchdiv .searchbutton{
+	width:50px;
+	height:40px;
+	border:none;
+	background:#ffca27;
+	color:#333;
+	display:inline-block;
+	vertical-align:middle;
+	font-size:20px;
+	cursor:pointer;
+	transition:0.5s all;
+}
+
+#headermain .searchdiv .searchbutton:hover{
+	background:#f2663a;
+	color:#fff;
+}
+.icon {
+    float: left;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+.icon2 {
+	float: left;
+    margin-left: 8px;
+    padding-top: 6px;
+}
+.icon3 {
+	float: left;
+    margin-left: 8px;
+    padding-top: 6px;
+}
+.icon4 {
+	float: left;
+    margin-left: 8px;
+    padding-top: 6px;
+}
+.icon5 {
+	float: left;
+    margin-left: 8px;
+    padding-top: 6px;
+}
+}
+}
