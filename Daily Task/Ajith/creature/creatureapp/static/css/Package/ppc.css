@@ -1,0 +1,608 @@
+
+.ppc1{
+    width: 100%;
+    background: aliceblue;
+    height: 750px;
+}
+.ppc1 h4{
+    padding-top: 40px;
+    margin-left: 70px;
+    font-size: 20px;
+}
+.ppc1 h1{
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: 40px;
+    margin-right: 700px;
+}
+.ppc1 p{
+    margin-left: 70px;
+    padding-top: 5px;
+    font-size: 18px;
+    margin-right: 700px;
+
+}
+.ppc1 .p{
+    margin-top: 40px;
+}
+.ppc1 img{
+    float: right;
+    margin-right: 0px;
+    margin-top: -600px;
+}
+.ppc1 .button1{
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    background: yellow;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 70px;
+}
+.ppc1 .button2{
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    background: yellow;
+    outline: none;
+    border:1px solid white;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    margin-left: 300px;
+    margin-top: -50px;
+    position: absolute;
+    cursor: pointer;
+}
+.ppc1 .button1:hover,.ppc1 .button2:hover{
+    color: white;
+    background: blue;
+}
+
+.ppc2{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+.ppc2 h1{
+    padding-top: 80px;
+    font-size: 45px;
+
+}
+.ppc2 span{
+    color: rgb(255, 196, 0);
+}
+
+.ppc2 .p{
+    margin-top: 20px;
+}
+.ppc2 p{
+    padding-top: 8px;
+    font-size: 18px;
+}
+
+.ppc3{
+    width: 100%;
+    height: 700px;
+
+}
+.ppc3 h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 100px;
+}
+.ppc3 .box1,.ppc3 .box2,.ppc3 .box3{
+    text-align: center;
+    width: 300px;
+    height: 330px;
+    border:1px solid rgb(210, 209, 207);
+    margin-left: 50px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+.ppc3 .box1 .circle,.ppc3 .box2 .circle,.ppc3 .box3 .circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+
+    text-align: center;
+    margin-left: 98px;
+    margin-top: 20px;
+    background: rgb(255, 204, 2);
+}
+.ppc3 .box1 .circle i,.ppc3 .box2 .circle i,.ppc3 .box3 .circle i{
+    font-size: 40px;
+    padding-top: 30px;
+    color: #fff;
+}
+.ppc3 .box1 h3,.ppc3 .box2 h3,.ppc3 .box3 h3{
+    margin-top: 40px;
+}
+.ppc3 .box1 h4,.ppc3 .box2 h4,.ppc3 .box3 h4{
+    margin-top: 10px;
+}
+.ppc3 .box1 p,.ppc3 .box2 p,.ppc3 .box3 p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.ppc3 .box1 input,.ppc3 .box2 input,.ppc3 .box3 input{
+    width:110px ;
+    height: 40px;
+    margin-top: 40px;
+    background: #fff;
+    border:1px solid rgb(210, 209, 207);
+    color: rgb(255, 204, 2);
+    border-radius: 5px;
+}
+.ppc3 .box2{
+    margin-left: 460px;
+    margin-top: -330px;
+}
+.ppc3 .box3{
+    margin-left: 860px;
+    margin-top: -330px;
+}
+.ppc3 .box1:hover,.ppc3 .box2:hover,.ppc3 .box3:hover{
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.ppc4{
+    width: 100%;
+    height: 700px;
+
+}
+.ppc4 h1{
+    font-size: 40px;
+    text-align: center;
+}
+.ppc4 .p{
+    margin-top: 30px;
+}
+.ppc4 p{
+    margin-left: 40px;
+    padding-top: 5px;
+    font-size: 18px;
+}
+.ppc4 img{
+    float: right;
+    height: 500px;
+    width: 500px;
+    margin-right: 50px;
+    margin-top: -450px;
+}
+
+.ppc5{
+    width: 100%;
+    height: 300px;
+}
+.ppc5 .box1{
+
+    width: 1010px;
+    height: 130px;
+    margin-left: 100px;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 4px 2px rgba(133, 128, 128, 0.3);
+}
+.ppc5 .box1 i{
+    font-size: 100px;
+    color: rgb(255, 153, 1);
+}
+.ppc5 .box1 h1{
+    margin-left: 100px;
+    font-size: 30px;
+    margin-top: -80px;
+}
+.ppc5 .box1 p{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.ppc6{
+    width: 100%;
+    height: 1500px;
+}
+.ppc6 h1{
+    font-size: 40px;
+    text-align: center;
+}
+.ppc6 .box1,.ppc6 .box2{
+    border: 1px solid rgb(255, 149, 0);
+    width: 500px;
+    height: 580px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.ppc6 img{
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+
+}
+.ppc6 .box1 h1,.ppc6 .box2 .h1{
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.ppc6 .box1 .p,.ppc6 .box2 .p{
+    margin-top: 10px;
+}
+.ppc6 .box1 p,.ppc6 .box2 p{
+    padding-top: 10px;
+    font-size: 18px;
+}
+.ppc6 .box2{
+    margin-left: 660px;
+    margin-top: -582px;
+}
+.ppc6 .p1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.ppc7{
+    width: 100%;
+    height: 600px;
+    background: aliceblue;
+}
+.ppc7 h1{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+
+}
+.ppc7 img{
+    width: 400px;
+    height: 400px;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+.ppc7 .text{
+    float: right;
+    margin-right: 50px;
+    margin-top: 30px;
+
+}
+.ppc7 .text .p{
+    margin-top: 20px;
+}
+.ppc7 .text p{
+    font-size: 18px;
+    padding-top: 8px;
+}
+.ppc7 .text span{
+    font-weight: bold;
+}
+
+.ppc8{
+    width: 100%;
+    height: 1400px;
+}
+
+.ppc8 .box1,.ppc8 .box2{
+    border: 1px solid rgb(255, 149, 0);
+    width: 500px;
+    height: 580px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 80px;
+
+}
+.ppc8 img{
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+
+}
+.ppc8 .box1 h1,.ppc8 .box2 h1{
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.ppc8 .box1 .p,.ppc8 .box2 .p{
+    margin-top: 10px;
+}
+.ppc8 .box1 p,.ppc8 .box2 p{
+    padding-top: 10px;
+    font-size: 18px;
+}
+.ppc8 .box2{
+    margin-left: 660px;
+    margin-top: -582px;
+}
+
+.ppc9{
+    width: 100%;
+    height: 500px;
+}
+.ppc9 h1{
+    text-align: center;
+    font-size: 40px;
+}
+.ppc9 .p{
+    margin-top: 30px;
+}
+.ppc9 p{
+    margin-left: 40px;
+    font-size: 18px;
+    padding-top: 8px;
+}
+
+.ppc10{
+    width: 100%;
+    height: 1700px;
+}
+.ppc10 h1{
+    font-size: 40px;
+    text-align: center;
+}
+.ppc10 .box1,.ppc10 .box2,.ppc10 .box3{
+    width: 350px;
+    height: 1500px;
+    border: 1px solid rgb(227, 129, 18);
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+.ppc10 .box1 .text1,.ppc10 .box2 .text1,.ppc10 .box3 .text1{
+    width: 350;
+    height: 120px;
+    border: 1px solid rgb(255, 153, 0);
+    border-radius: 10px 10px 0px 0px;
+    background: rgb(255, 153, 0);
+
+}
+.ppc10 .box1 .text1 h2,.ppc10 .box2 .text1 h2,.ppc10 .box3 .text1 h2{
+   text-align: center;
+   font-size: 25px;
+   margin-top: 20px;
+}
+.ppc10 .box1 .text1 p,.ppc10 .box2 .text1 p,.ppc10 .box3 .text1 p{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+
+}
+.ppc10 h3{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.ppc10 p{
+    text-align: center;
+    font-size: 15px;
+}
+.ppc10 .p{
+    margin-top: 20px;
+
+}
+.ppc10 h4{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.ppc10 hr{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   width: 270px;
+   margin-left: 40px;
+}
+.ppc10 span{
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.ppc10 .box1 form input,.ppc10 .box2 form input,.ppc10 .box3 form input{
+    margin-top: 40px;
+    margin-left: 100px;
+    width: 150px;
+    height: 40px;
+    background: rgb(255, 153, 0);
+    color: #fff;
+    border: none;
+}
+.ppc10 .box2{
+    margin-left: 425px;
+    margin-top: -1502px;
+}
+.ppc10 .box3{
+    margin-left: 820px;
+    margin-top: -1502px;
+
+}
+.ppc10 i{
+    font-size: 20px;
+}
+.ppc10 span  .fa-check-circle{
+    color: rgb(114, 224, 114);
+}
+.ppc10 span  .fa-times-circle{
+    color: rgb(219, 77, 64);
+}
+.ppc10 h5{
+    margin-top: 40px;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.ppc11{
+    width: 100%;
+    height: 600px;
+}
+.ppc11 h1{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 80px;
+}
+.ppc11 .p{
+    margin-top: 30px;
+}
+.ppc11 p{
+    padding-top: 8px;
+    margin-left: 80px;
+    font-size: 18px;
+}
+.ppc11 img{
+    width: 400px;
+    height: 400px;
+    float: right;
+    margin-right: 80px;
+    margin-top: -300px;
+}
+
+.ppc12{
+    width: 100%;
+    height: 700px;
+}
+.ppc12 h1{
+    font-size: 40px;
+    padding-top: 80px;
+    text-align: center;
+}
+.ppc12 .p{
+    margin-top: 30px;
+
+}
+.ppc12 p{
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.ppc12 .slider{
+    max-width: 1100px;
+    display: flex;
+    margin-left: 60px;
+    padding-top: 30px;
+    height: 400px;
+
+}
+
+.ppc12 .slider .card{
+    text-align: center;
+    flex: 1;
+    margin: 0px 20px;
+    width: 330px;
+    height: 340px;
+    border: 1px solid black;
+
+
+}
+.ppc12 .slider .card .img{
+    height: 200px;
+    width: 400px;
+}
+.ppc12 .slider .card .img img{
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+   margin-left: 40px;
+
+}
+
+.ppc12 .slider .card .content h2{
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.ppc13{
+    width: 100%;
+    height: 500px;
+
+}
+.ppc13 .box,.ppc13 .box1,.ppc13 .box2{
+     border: none;
+     width: 500px;
+     height: 300px;
+
+     margin-top: 30px;
+     margin-left: 80px;
+     box-sizing: border-box;
+     box-shadow: 2px 3px 10px 8px rgba(154, 148, 148, 0.3);
+
+}
+
+.ppc13 .box .p,.ppc13 .box1 .p{
+    padding-top: 20px;
+    margin-left: 30px;
+    font-size: 18px;
+}
+.ppc13 .box .p1,.ppc13 .box1 .p1{
+    margin-left: 47px;
+    font-size: 18px;
+}
+.ppc13 i{
+    color: rgb(6, 30, 244);
+}
+.ppc13 .box1{
+    margin-left: 640px;
+    margin-top: -300px;
+
+}
+.ppc13 h1{
+    padding-top: 40px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.ppc14{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+.ppc14 h1{
+    font-size: 40px;
+    padding-top: 40px;
+
+}
+.ppc14 .p{
+    margin-top: 30px;
+}
+.ppc14 p{
+    padding-top: 10px;
+    font-size: 18px;
+}
+.ppc15{
+    width: 100%;
+    height: 400px;
+}
+.ppc15 h1{
+    text-align: center;
+    font-size: 35px;
+
+}
+.ppc15 .summary{
+    margin-top: 40px;
+}
+.ppc15 summary{
+     margin-left: 100px;
+     margin-top: 20px;
+     font-size: 25px;
+
+}
+.ppc15 hr{
+     margin-top: 5px;
+     margin-bottom: 5px;
+     width: 900px;
+     margin-left: 100px;
+}
+.ppc15 .p{
+     margin-top: 20px;
+}
+.ppc15 p{
+     margin-left: 120px;
+     font-size: 18px;
+     padding-top: 5px;
+     color: blue;
+}
+.ppc15 h2{
+    margin-left: 120px;
+    margin-top: 30px;
+    font-size: 20px;
+}

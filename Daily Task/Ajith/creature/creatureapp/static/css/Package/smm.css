@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.smm1{
+    width: 100%;
+    background: aliceblue;
+    height: 700px;
+}
+.smm1 h4{
+    padding-top: 40px;
+    margin-left: 70px;
+    font-size: 20px;
+}
+.smm1 h1{
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: 40px;
+    margin-right: 700px;
+}
+.smm1 p{
+    margin-left: 70px;
+    padding-top: 5px;
+    font-size: 17px;
+    margin-right: 700px;
+
+}
+.smm1 .p{
+    margin-top: 40px;
+}
+.smm1 img{
+    margin-left: 600px;
+
+    margin-top: -500px;
+}
+.smm1 .button1{
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    background: yellow;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    cursor: pointer;
+    margin-left: 70px;
+}
+.smm1 .button2{
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    background: yellow;
+    outline: none;
+    border:1px solid white;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    margin-left: 300px;
+    margin-top: -50px;
+    position: absolute;
+    cursor: pointer;
+}
+.smm1 .button1:hover,.smm1 .button2:hover{
+    color: white;
+    background: blue;
+}
+
+.smm2{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+.smm2 h1{
+    padding-top: 80px;
+    font-size: 45px;
+
+}
+.smm2 span{
+    color: rgb(255, 196, 0);
+}
+.smm2 .p{
+    margin-top: 20px;
+}
+.smm2 p{
+    padding-top: 8px;
+    font-size: 18px;
+}
+
+.smm3{
+    width: 100%;
+    height: 700px;
+
+}
+.smm3 h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 100px;
+}
+.smm3 .box1,.smm3 .box2,.smm3 .box3{
+    text-align: center;
+    width: 300px;
+    height: 330px;
+    border:1px solid rgb(210, 209, 207);
+    margin-left: 50px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+.smm3 .box1 .circle,.smm3 .box2 .circle,.smm3 .box3 .circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+
+    text-align: center;
+    margin-left: 98px;
+    margin-top: 20px;
+    background: rgb(255, 204, 2);
+}
+.smm3 .box1 .circle i,.smm3 .box2 .circle i,.smm3 .box3 .circle i{
+    font-size: 40px;
+    padding-top: 30px;
+    color: #fff;
+}
+.smm3 .box1 h3,.smm3 .box2 h3,.smm3 .box3 h3{
+    margin-top: 40px;
+}
+.smm3 .box1 h4,.smm3 .box2 h4,.smm3 .box3 h4{
+    margin-top: 10px;
+}
+.smm3 .box1 p,.smm3 .box2 p,.smm3 .box3 p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.smm3 .box1 input,.smm3 .box2 input,.smm3 .box3 input{
+    width:110px ;
+    height: 40px;
+    margin-top: 40px;
+    background: #fff;
+    border:1px solid rgb(210, 209, 207);
+    color: rgb(255, 204, 2);
+    border-radius: 5px;
+}
+.smm3 .box2{
+    margin-left: 460px;
+    margin-top: -330px;
+}
+.smm3 .box3{
+    margin-left: 860px;
+    margin-top: -330px;
+}
+.smm3 .box1:hover,.smm3 .box2:hover,.smm3 .box3:hover{
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.smm4{
+    width: 100%;
+    height: 1500px;
+    text-align:  center;
+}
+.smm4 h1{
+    font-size: 40px;
+}
+.smm4 .box1,.smm4 .box2,.smm4 .box3{
+    border: 1px solid rgb(199, 199, 193);
+    width: 330px;
+    height: 600px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.smm4 h3{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.smm4 p{
+     padding-top: 8px;
+    font-size: 18px;
+}
+.smm4 .p{
+  margin-top: 20px;
+}
+.smm4 .box2{
+    margin-left: 440px;
+    margin-top: -602px;
+}
+.smm4 .box3{
+    margin-left: 840px;
+    margin-top: -602px;
+
+}
+
+.smm5{
+    width: 100%;
+    height: 300px;
+}
+.smm5 .box1{
+
+    width: 1010px;
+    height: 130px;
+    margin-left: 100px;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 4px 2px rgba(133, 128, 128, 0.3);
+}
+.smm5 .box1 i{
+    font-size: 100px;
+    color: rgb(255, 153, 1);
+}
+.smm5 .box1 h1{
+    margin-left: 100px;
+    font-size: 30px;
+    margin-top: -80px;
+}
+.smm5 .box1 p{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.smm6{
+    width: 100%;
+    height: 650px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+
+}
+.smm6 h1{
+    font-size: 45px;
+    color: #fff;
+    padding-top: 80px;
+}
+.smm6 h2{
+    font-size: 45px;
+    margin-top: 10px;
+    color: rgb(250, 234, 6);
+}
+.smm6 .p{
+    margin-top: 30px;
+}
+.smm6 p{
+    font-size: 18px;
+    padding-top: 8px;
+    color: #fff;
+
+}
+.smm6 h3{
+    padding-top: 8px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.smm7{
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+.smm7 h3{
+    font-size: 35px;
+    padding-top: 50px;
+}
+.smm7 h1{
+    margin-top: 30px;
+    font-size: 43px;
+}
+.smm7 .p{
+    margin-top: 30px;
+}
+.smm7 p{
+    font-size: 19px;
+    padding-top: 10px;
+
+}
+
+
+.smm8{
+    width: 100%;
+    height: 3200px;
+}
+.smm8 h1{
+    font-size: 40px;
+    text-align: center;
+}
+.smm8 .box1{
+    width: 350px;
+    height: 1600px;
+    border: 1px solid rgb(227, 129, 18);
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+.smm8 .box2,.smm8 .box3{
+    width: 350px;
+    height: 3000px;
+    border: 1px solid rgb(227, 129, 18);
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+.smm8 .box1 .text1,.smm8 .box2 .text1,.smm8 .box3 .text1{
+    width: 350;
+    height: 120px;
+    border: 1px solid rgb(255, 153, 0);
+    border-radius: 10px 10px 0px 0px;
+    background: rgb(255, 153, 0);
+
+}
+.smm8 .box1 .text1 h2,.smm8 .box2 .text1 h2,.smm8 .box3 .text1 h2{
+   text-align: center;
+   font-size: 25px;
+   margin-top: 20px;
+}
+.smm8 .box1 .text1 p,.smm8 .box2 .text1 p,.smm8 .box3 .text1 p{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+
+}
+.smm8 h3{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.smm8 p{
+    text-align: center;
+    font-size: 15px;
+}
+.smm8 .p{
+    margin-top: 20px;
+}
+.smm8 h4{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.smm8 hr{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   width: 270px;
+   margin-left: 40px;
+}
+.smm8 span{
+    margin-left: 20px;
+    font-size: 18px;
+}
+.smm8 .box1 form input,.smm8 .box2 form input,.smm8 .box3 form input{
+    margin-top: 40px;
+    margin-left: 100px;
+    width: 150px;
+    height: 40px;
+    background: rgb(255, 153, 0);
+    color: #fff;
+    border: none;
+}
+.smm8 .box2{
+    margin-left: 435px;
+    margin-top: -1602px;
+}
+.smm8 .box3{
+    margin-left: 830px;
+    margin-top: -3002px;
+
+}
+.smm8 i{
+    font-size: 20px;
+}
+.smm8 span  .fa-check-circle{
+    color: rgb(114, 224, 114);
+}
+.smm8 span  .fa-times-circle{
+    color: rgb(219, 77, 64);
+}
+
+.smm9{
+    height: 500px;
+    width: 100%;
+}
+.smm9 h4{
+    margin-left: 40px;
+    font-size: 20px;
+}
+.smm9 h5{
+    margin-left: 40px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.smm9 .p{
+    margin-top: 30px;
+}
+.smm9 p{
+    padding-top: 8px;
+    margin-left: 40px;
+    font-size: 19px;
+}
+.smm9 span{
+    color: orangered;
+}
+
+.smm10{
+    width: 100%;
+    height: 1300px;
+}
+.smm10 h1{
+    font-size: 40px;
+    text-align: center;
+}
+.smm10 .box1,.smm10 .box2{
+    border: 1px solid rgb(255, 149, 0);
+    width: 500px;
+    height: 530px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 40px;
+    border-radius: 15px;
+}
+.smm10 img{
+    width: 300px;
+    height: 300px;
+
+}
+.smm10 .box1 h1,.smm10 .box2 .h1{
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.smm10 .p{
+    margin-top: 10px;
+}
+.smm10 p{
+    padding-top: 8px;
+    font-size: 18px;
+}
+.smm10 .box2{
+    margin-left: 660px;
+    margin-top: -532px;
+}
+.smm11{
+    width: 100%;
+    height: 450px;
+
+}
+.smm11 .box,.smm11 .box1,.smm11 .box2{
+     border: none;
+     width: 500px;
+     height: 200px;
+     margin-top: 30px;
+     margin-left: 80px;
+     box-sizing: border-box;
+     box-shadow: 2px 3px 10px 8px rgba(154, 148, 148, 0.3);
+
+}
+
+.smm11 .box .p,.smm11 .box1 .p{
+    padding-top: 20px;
+    margin-left: 30px;
+    font-size: 18px;
+}
+.smm11 .box .p1,.smm11 .box1 .p1{
+    margin-left: 47px;
+    font-size: 18px;
+}
+.smm11 .p2{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.smm11 span{
+    color: orangered;
+}
+.smm11 i{
+    color: rgb(6, 30, 244);
+}
+.smm11 .box1{
+    margin-left: 640px;
+    margin-top: -200px;
+
+}
+.smm11 h1{
+    padding-top: 40px;
+    font-size: 40px;
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.smm12{
+    width: 100%;
+    height: 350px;
+    text-align: center;
+}
+.smm12 h1{
+    font-size: 40px;
+    padding-top: 80px;
+
+}
+.smm12 .p{
+    margin-top: 30px;
+}
+.smm12 p{
+    padding-top: 10px;
+    font-size: 19px;
+}
+.smm12 span{
+    color: orangered;
+}
