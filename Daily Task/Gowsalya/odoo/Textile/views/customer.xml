@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_registration_kanban" model="ir.ui.view">
+            <field name="name">textile.registration.kanban.view</field>
+            <field name="model">textile.registration</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <field name="image"/>
+                    <field name="id"/>
+                    <field name='dress_name'/>
+                    <field name='price'/>
+                    <field name='size'/>
+                    <field name='note'/>
+                    
+                    <templates>
+                            <t t-name="kanban-box">
+                                <div t-attf-class="oe_kanban_global_click">
+                                    <div class="oe_kanban_details">
+                                        <img alt="Avatar" 
+                                             t-att-src="kanban_image('textile.registration','image', record.id.raw_value)"  class="oe_kanban_avatar o_image_64_cover float-right mt-3" />
+                                    <div class="row">
+                                    <div class="col-md-3">
+                                    <div class="o_kanban_image">
+                                    
+                                <!-- <img t-att-src="kanban_image('textile.registration', 'image', record.id.raw_value)" width="100" height="100" class="oe_kanban_avatar o_image_24_cover float-right mt-2" /> -->
+                                    
+                                     <!-- <img t-att-src="kanban_image('test.test', 'image', record.id.raw_value)" /> -->
+                                     <!-- <field name='image'/> -->
+                                    </div>  
+                                    </div>  
+                                    </div>      
+                                                        
+                                    <ul>               
+                                        <li>
+                                            <font size="2">
+                                                Model : <field name="dress_name"/>
+                                            </font>
+                                        </li>
+                                        <li>
+                                            <font size="2">
+                                                Price  : <field name="price"/>
+                                            </font>
+                                        </li>  
+                                        <li>
+                                            <font size="2">
+                                                Size: <field name="size"/>
+                                            </font>
+                                        </li>  
+                                                                                 
+                                    </ul>
+                                    </div>
+                                </div>
+                            </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+        <data>
+            <record id="view_registration" model="ir.ui.view">
+                <field name="name">Textile Registration</field>
+                <field name="model">textile.registration</field>
+                <field name="priority" eval="8" />
+                <field name="arch" type="xml">
+                    <tree>
+                        <field name='dress_name'/>
+                        <field name='price'/>
+                        <field name='size'/>
+                        <field name='note'/>
+                    </tree>                                 
+                </field>        
+                </record>
+
+               <record id="view_doctor_form" model="ir.ui.view">
+                <field name="name">Textile Registration</field>
+                <field name="model">textile.registration</field>
+                <field name="priority" eval="8" />
+                <field name="arch" type="xml">     
+                <form string="doctor">       
+                    <!-- <field name="help" type="html"> -->
+                        <!-- <form> -->
+                            <sheet> 
+                                  <field name="image" widget="image" class="oe_avatar"/>    
+                                <group>
+                                    <group>                                                 
+                                        <field name="dress_name"/>
+                                        <field name="price"/>
+                                    </group>
+                                    <group>
+                                        <field name="size"/>
+                                        <field name="note"/>
+                                        <!-- <field name="Textile/image/profile logo.png"/> -->
+                                    </group>
+                                </group>
+
+                                <notebook>
+                                    <page string="S NO" >
+                                    <button name="edit_button" type="object" string="Edit" class="oe_highlight" />
+                                        <field name = 'currents_ailments'>
+                                               <tree string="Details" editable="bottom">
+                                                    <field name = "sequence_ref"/>
+                                                    <field name = "no_of_quantity" />
+                                                    <field name = "no_of_pieces"/>
+                                                    <field name = "total"/>
+                                                </tree> 
+                                        </field>
+                                    </page> 
+                                   
+                                    <page string="Rate" name="rate">
+                                        <group>
+                                        <field name = 'quantity'/>
+                                        <field name = 'address'/>
+                                        </group>
+                                        
+                                    </page>
+                                    
+                                    <page string="Description" name="description">
+                                        <field name = "details"/>
+                                    </page>
+                                    
+                                    <page string="Bill" name="bill">
+                                    <group>
+                                        <!-- <field name = "line_bill"/> -->
+                                            
+                                            <field name = "state_tax"/>
+                                            <field name = "central_tax"/>
+                                        
+                                    </group>            
+                                    
+                                    </page>
+                                    
+                                </notebook>
+
+                            </sheet>
+                        </form>
+           
+                    </field>
+                </record>
+
+                      <record model="ir.actions.act_window" id="view_textile">            
+                    <field name="name">Textile</field>         
+                        <field name="res_model">textile.registration</field>                 
+                        <field name="view_mode">tree,form,kanban,pivot</field>
+                        <field name="domain">[]</field>            
+                        <field name="help" type="html">                
+                            <p class="oe_view_nocontent_create">Create 
+                            </p>            
+                        </field>        
+                    </record>
+
+                <record id="view_registration_search" model="ir.ui.view">
+                    <field name="name">textile.registration.search</field>
+                    <field name="model">textile.registration</field>
+                    <field name="arch" type="xml">
+                        <search string="Registration">
+                            <field name="dress_name"/>
+                            <field name="note"/>
+                            <separator/>
+                            
+
+
+                        </search>
+                    </field>
+                </record>
+                    
+
+                            <menuitem id="textile_root" name="Textile" sequence="0" />
+                            <menuitem id="textile_registration" name="Registration" parent="textile_root" action="view_textile" />
+                            <menuitem id="textile_membership" name="Membership" parent="textile_registration" />
+                            <menuitem id="textile_contact" name="Contact" parent="textile_membership"  />
+
+                    </data>
+</odoo>

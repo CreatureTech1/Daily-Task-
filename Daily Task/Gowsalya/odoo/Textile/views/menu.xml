@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+		        
+    <menuitem id="textile_root" 
+              name="Textile shop"
+              sequence="0
+              "/>
+    
+    <menuitem id="textile_registration" 
+              name="Registration"
+              parent="textile_root"
+              sequence="0"/>
+
+    <menuitem id="textile_membership" 
+              name="Membership"
+              parent="textile_root"
+              sequence="0"/>
+
+</odoo>
+ <!--  -->

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_textile_registration,access.textile.registration,model_textile_registration,,1,1,1,1
+access_textile_billing,access.textile.billing,model_textile_billing,,1,1,1,1
+
