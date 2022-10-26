@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.orm1{
+    width: 100%;
+    background: aliceblue;
+    height: 750px;
+}
+.orm1 h4{
+    padding-top: 40px;
+    margin-left: 70px;
+    font-size: 20px;
+}
+.orm1 h1{
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: 40px;
+    margin-right: 700px;
+}
+.orm1 p{
+    margin-left: 70px;
+    padding-top: 5px;
+    font-size: 17px;
+    margin-right: 700px;
+
+}
+.orm1 .p{
+    margin-top: 40px;
+}
+.orm1 img{
+    margin-left: 600px;
+
+    margin-top: -500px;
+}
+.orm1 .button1{
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    background: yellow;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    cursor: pointer;
+    margin-left: 70px;
+}
+.orm1 .button2{
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    background: yellow;
+    outline: none;
+    border:1px solid white;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    margin-left: 300px;
+    margin-top: -50px;
+    position: absolute;
+    cursor: pointer;
+}
+.orm1 .button1:hover,.orm1 .button2:hover{
+    color: white;
+    background: blue;
+}
+
+.orm2{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+.orm2 h1{
+    padding-top: 80px;
+    font-size: 45px;
+
+}
+.orm2 span{
+    color: rgb(255, 196, 0);
+}
+.orm2 .p{
+    margin-top: 20px;
+}
+.orm2 p{
+    padding-top: 8px;
+    font-size: 19px;
+}
+
+.orm3{
+    width: 100%;
+    height: 700px;
+
+
+}
+.orm3 h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 100px;
+}
+.orm3 .box1,.orm3 .box2,.orm3 .box3{
+    text-align: center;
+    width: 300px;
+    height: 330px;
+    border:1px solid rgb(210, 209, 207);
+    margin-left: 50px;
+    margin-top: 60px;
+    border-radius: 10px;
+    background: rgb(255, 204, 2);
+
+}
+.orm3 .box1 .circle,.orm3 .box2 .circle,.orm3 .box3 .circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+
+    text-align: center;
+    margin-left: 98px;
+    margin-top: 20px;
+    background: rgb(255, 255, 255);
+}
+.orm3 .box1 .circle i,.orm3 .box2 .circle i,.orm3 .box3 .circle i{
+    font-size: 40px;
+    padding-top: 30px;
+
+    color: rgb(255, 204, 2);
+
+}
+.orm3 .box1 h3,.orm3 .box2 h3,.orm3 .box3 h3{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.orm3 .box1 h4,.orm3 .box2 h4,.orm3 .box3 h4{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.orm3 .box1 p,.orm3 .box2 p,.orm3 .box3 p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.orm3 .box1 input,.orm3 .box2 input,.orm3 .box3 input{
+    width:110px ;
+    height: 40px;
+    margin-top: 40px;
+    border:1px solid rgb(210, 209, 207);
+    border-radius: 5px;
+    cursor: pointer;
+    background: black;
+    color: #fff;
+}
+.orm3 .box1 input:hover,.orm3 .box2 input:hover,.orm3 .box3 input:hover{
+    color: rgb(255, 204, 2);
+    background: #fff;
+}
+.orm3 .box2{
+    margin-left: 460px;
+    margin-top: -330px;
+}
+.orm3 .box3{
+    margin-left: 860px;
+    margin-top: -330px;
+}
+.orm3 .box1:hover,.orm3 .box2:hover,.orm3 .box3:hover{
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.orm4{
+    width: 100%;
+    height: 700px;
+
+}
+.orm4 h1{
+    font-size: 40px;
+    text-align: center;
+}
+.orm4 p{
+     padding-top: 10px;
+    font-size: 20px;
+    margin-left: 40px;
+}
+.orm4 .p{
+  margin-top: 20px;
+}
+.orm4 img{
+    width: 450px;
+    height: 450px;
+    margin-left: 650px;
+    margin-top: -430px;
+}
+.orm5{
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+
+}
+.orm5 h1{
+    font-size: 45px;
+    color: #fff;
+    padding-top: 80px;
+}
+.orm5 h2{
+    font-size: 45px;
+    margin-top: 10px;
+    color: rgb(250, 234, 6);
+}
+.orm5 .p{
+    margin-top: 30px;
+}
+.orm5 p{
+    font-size: 19px;
+    padding-top: 8px;
+    color: #fff;
+
+}
+.orm5 h3{
+    padding-top: 8px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.orm6{
+    width: 100%;
+    height: 250px;
+    padding-top: 100px;
+}
+.orm6 .box1{
+
+    width: 1010px;
+    height: 130px;
+    margin-left: 100px;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 4px 2px rgba(133, 128, 128, 0.3);
+}
+.orm6 .box1 i{
+    font-size: 100px;
+    color: rgb(255, 153, 1);
+}
+.orm6 .box1 h1{
+    margin-left: 100px;
+    font-size: 30px;
+    margin-top: -80px;
+}
+.orm6 .box1 p{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.orm7{
+    width: 100%;
+    height: 2000px;
+}
+.orm7 h1{
+    font-size: 40px;
+    text-align: center;
+}
+.orm7 .box1{
+    width: 350px;
+    height: 1750px;
+    border: 1px solid rgb(227, 129, 18);
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+.orm7 .box2,.orm7 .box3{
+    width: 350px;
+    height: 1775px;
+    border: 1px solid rgb(227, 129, 18);
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.orm7 .box1 .text1,.orm7 .box2 .text1,.orm7 .box3 .text1{
+    width: 350;
+    height: 120px;
+    border: 1px solid rgb(255, 153, 0);
+    border-radius: 10px 10px 0px 0px;
+    background: rgb(255, 153, 0);
+
+}
+.orm7 .box1 .text1 h2,.orm7 .box2 .text1 h2,.orm7 .box3 .text1 h2{
+   text-align: center;
+   font-size: 25px;
+   margin-top: 20px;
+}
+.orm7 .box1 .text1 p,.orm7 .box2 .text1 p,.orm7 .box3 .text1 p{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+
+}
+.orm7 h3{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.orm7 p{
+    text-align: center;
+    font-size: 15px;
+}
+.orm7 .p{
+    margin-top: 20px;
+}
+.orm7 h4{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.orm7 hr{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   width: 270px;
+   margin-left: 40px;
+}
+.orm7 span{
+    margin-left: 20px;
+    font-size: 18px;
+}
+.orm7 .box1 form input,.orm7 .box2 form input,.orm7 .box3 form input{
+    margin-top: 40px;
+    margin-left: 100px;
+    width: 150px;
+    height: 40px;
+    background: rgb(255, 153, 0);
+    color: #fff;
+    border: none;
+}
+.orm7 .box2{
+    margin-left: 425px;
+    margin-top: -1752px;
+}
+.orm7 .box3{
+    margin-left: 820px;
+    margin-top: -1777px;
+
+}
+.orm7 i{
+    font-size: 20px;
+}
+.orm7 span  .fa-check-circle{
+    color: rgb(114, 224, 114);
+}
+.orm7 span  .fa-times-circle{
+    color: rgb(219, 77, 64);
+}
+
+.orm8{
+    height: 200px;
+    width: 100%;
+}
+.orm8 h4{
+    margin-left: 40px;
+    font-size: 20px;
+}
+.orm8 h5{
+    margin-left: 40px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.orm8 .p{
+    margin-top: 30px;
+}
+.orm8 p{
+    padding-top: 8px;
+    margin-left: 40px;
+    font-size: 20px;
+}
+.orm8 span{
+    color: orangered;
+}
+
+
+.orm9{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+.orm9 h1{
+    font-size: 40px;
+    padding-top: 80px;
+
+}
+.orm9 .p{
+    margin-top: 30px;
+}
+.orm9 p{
+    padding-top: 10px;
+    font-size: 20px;
+}
+.orm9 span{
+    color: orangered;
+}
+.orm10{
+    width: 100%;
+    height: 400px;
+}
+.orm10 h1{
+    margin-left: 40px;
+
+}
+.orm10 .summary{
+   margin-top: 40px;
+}
+.orm10 summary{
+    margin-left: 100px;
+    margin-top: 20px;
+    font-size: 25px;
+
+}
+.orm10 hr{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 900px;
+    margin-left: 100px;
+}
+.orm10 .p{
+    margin-top: 20px;
+}
+.orm10 p{
+    margin-left: 120px;
+    font-size: 20px;
+    padding-top: 5px;
+    color: blue;
+}
