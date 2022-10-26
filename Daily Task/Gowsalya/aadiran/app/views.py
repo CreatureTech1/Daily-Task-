@@ -1,20 +1,20 @@
 from django.conf import settings
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, auth
+from . forms import CreateUserForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from . models import User, Bus
-# from django.core.mail import EmailMessage, send_mail
-# from django.contrib.sites.shortcuts import get_current_site
-# from django.template.loader import render_to_string
-# from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
-# from django.utils.encoding import force_bytes
-# #  force_text
-from django.contrib.auth import authenticate, login, logout
-# from . tokens import generate_token
+from django.contrib.auth.forms import UserCreationForm
+from app.models import EnqInsert, Subscription
+from django.db import connection
+from django.template.loader import render_to_string
+from django.core.mail import EmailMessage
+from django.conf import settings
 
-# Create your views here.
+
+from django.contrib.auth import authenticate, login, logout
+
 def index(request):
     return render(request, "app/index.html")
 
@@ -55,31 +55,6 @@ def signup(request):
         myuser.save()
         messages.success(request, "Your Account has been created succesfully!! Please check your email to confirm your email address in order to activate your account.")
         
-        # Welcome Email
-        # subject = "Welcome to GFG- Django Login!!"
-        # message = "Hello " + myuser.first_name + "!! \n" + "Welcome to GFG!! \nThank you for visiting our website\n. We have also sent you a confirmation email, please confirm your email address. \n\nThanking You\nAnubhav Madhav"        
-        # from_email = settings.EMAIL_HOST_USER
-        # to_list = [myuser.email]
-        # send_mail(subject, message, from_email, to_list, fail_silently=True)
-        
-        # # Email Address Confirmation Email
-        # current_site = get_current_site(request)
-        # email_subject = "Confirm your Email @ GFG - Django Login!!"
-        # message2 = render_to_string('email_confirmation.html',{
-            
-        #     'name': myuser.first_name,
-        #     'domain': current_site.domain,
-        #     'uid': urlsafe_base64_encode(force_bytes(myuser.pk)),
-        #     'token': generate_token.make_token(myuser)
-        # })
-        # email = EmailMessage(
-        # email_subject,
-        # message2,
-        # settings.EMAIL_HOST_USER,
-        # [myuser.email],
-        # )
-        # email.fail_silently = True
-        # email.send()
         
         return redirect('signin')
         
@@ -87,22 +62,7 @@ def signup(request):
     return render(request, "app/signup.html")
 
 
-# def activate(request,uidb64,token):
-#     try:
-#         uid = force_text(urlsafe_base64_decode(uidb64))
-#         myuser = User.objects.get(pk=uid)
-#     except (TypeError,ValueError,OverflowError,User.DoesNotExist):
-#         myuser = None
 
-#     if myuser is not None and generate_token.check_token(myuser,token):
-#         myuser.is_active = True
-#         # user.profile.signup_confirmation = True
-#         myuser.save()
-#         login(request,myuser)
-#         messages.success(request, "Your Account has been activated!!")
-#         return redirect('signin')
-#     else:
-#         return render(request,'activation_failed.html')
 
 
 def signin(request):
@@ -122,31 +82,11 @@ def signin(request):
             return redirect('index')
     
     return render(request, "app/signin.html")
-
-
 def signout(request):
     logout(request)
     messages.success(request, "Logged Out Successfully!!")
     return redirect('index')
 
-def home(request):
-    return render(request, "home.html")
-
-
-def bussearch(request):
-    context = {}
-    if request.method == 'POST':
-        source_r = request.POST.get('source')
-        dest_r = request.POST.get('destination')
-        date_r = request.POST.get('date')
-        bus_list = Bus.objects.filter(source=source_r, dest=dest_r, date=date_r)
-        if bus_list:
-            return render(request, 'bussearch.html', locals())
-        else:
-            context["error"] = "Sorry no buses availiable"
-            return render(request, 'bussearch.html', context)
-    else:
-        return render(request, 'bussearch.html')
 
 
 @login_required(login_url='app/signin')
@@ -159,3 +99,198 @@ def layout(request):
 
 def bookinglist(request):
     return render(request, "bookinglist.html")
+
+def ticketlist(request):
+    return render(request, "ticketlist.html")
+
+def seat(request):
+    return render(request, "seat.html")
+
+def bali(request):
+    if request.method=='POST':
+        
+        name=request.POST.get('name')
+        city=request.POST.get('city')
+        email=request.POST.get('email')
+        phone_number=request.POST.get('phone_number')
+        travel_destination=request.POST.get('travel_destination')
+        date=request.POST.get('date')
+        no_of_person=request.POST.get('no_of_person')
+        vacation_type=request.POST.get('vacation_type')
+        en=EnqInsert(name=name,city=city,email=email,phone_number=phone_number,travel_destination=travel_destination,date=date,no_of_person=no_of_person,vacation_type=vacation_type)
+        en.save()
+        messages.add_message(request, messages.INFO, 'Your Profile has updated successfully!')
+    return render(request, "bali.html")
+
+
+def shirdi(request):
+    return render(request, "shirdi.html")
+
+def home1(request):
+    if request.method=='POST':
+        
+        name=request.POST.get('name')
+        city=request.POST.get('city')
+        email=request.POST.get('email')
+        phone_number=request.POST.get('phone_number')
+        travel_destination=request.POST.get('travel_destination')
+        date=request.POST.get('date')
+        no_of_person=request.POST.get('no_of_person')
+        vacation_type=request.POST.get('vacation_type')
+        en=EnqInsert(name=name,city=city,email=email,phone_number=phone_number,travel_destination=travel_destination,date=date,no_of_person=no_of_person,vacation_type=vacation_type)
+        en.save()
+        messages.add_message(request, messages.INFO, 'Your Profile has updated successfully!')
+    return render(request, "home1.html")
+
+def enquire(request):
+    if request.method=='POST':
+        name=request.POST["username"]
+        email=request.POST["email"]
+        password1=request.POST["password1"]
+        password2=request.POST["password2"]
+
+        if password1==password2:        
+            user=User.objects.create_user(username=name,email=email,password=password1)
+            user.is_staff=True
+            user.is_superuser=True
+            user.save()
+            messages.success(request,'Your account has been created! You are able to login')
+            return redirect('packages.html')
+        else:
+            messages.warning(request,'Password Mismatching...!!!')
+            return redirect('home1.html')        
+    else:
+        form=CreateUserForm()        
+        return render(request,"enquire.html",{'form':form})
+
+   
+def goa(request):
+    if request.method=='POST':
+        
+        name=request.POST.get('name')
+        city=request.POST.get('city')
+        email=request.POST.get('email')
+        phone_number=request.POST.get('phone_number')
+        travel_destination=request.POST.get('travel_destination')
+        date=request.POST.get('date')
+        no_of_person=request.POST.get('no_of_person')
+        vacation_type=request.POST.get('vacation_type')
+        en=EnqInsert(name=name,city=city,email=email,phone_number=phone_number,travel_destination=travel_destination,date=date,no_of_person=no_of_person,vacation_type=vacation_type)
+        en.save()
+        messages.add_message(request, messages.INFO, 'Your Profile has updated successfully!')
+    return render(request, "goa.html")
+
+def kerala(request):
+    if request.method=='POST':
+        
+        name=request.POST.get('name')
+        city=request.POST.get('city')
+        email=request.POST.get('email')
+        phone_number=request.POST.get('phone_number')
+        travel_destination=request.POST.get('travel_destination')
+        date=request.POST.get('date')
+        no_of_person=request.POST.get('no_of_person')
+        vacation_type=request.POST.get('vacation_type')
+        en=EnqInsert(name=name,city=city,email=email,phone_number=phone_number,travel_destination=travel_destination,date=date,no_of_person=no_of_person,vacation_type=vacation_type)
+        en.save()
+        messages.add_message(request, messages.INFO, 'Your Profile has updated successfully!')
+    return render(request, "kerala.html")
+
+def kodaikanal(request):
+    if request.method=='POST':
+        
+        name=request.POST.get('name')
+        city=request.POST.get('city')
+        email=request.POST.get('email')
+        phone_number=request.POST.get('phone_number')
+        travel_destination=request.POST.get('travel_destination')
+        date=request.POST.get('date')
+        no_of_person=request.POST.get('no_of_person')
+        vacation_type=request.POST.get('vacation_type')
+        en=EnqInsert(name=name,city=city,email=email,phone_number=phone_number,travel_destination=travel_destination,date=date,no_of_person=no_of_person,vacation_type=vacation_type)
+        en.save()
+        messages.add_message(request, messages.INFO, 'Your Profile has updated successfully!')
+    return render(request, "kodaikanal.html")
+    
+def manali(request):
+    if request.method=='POST':
+        
+        name=request.POST.get('name')
+        city=request.POST.get('city')
+        email=request.POST.get('email')
+        phone_number=request.POST.get('phone_number')
+        travel_destination=request.POST.get('travel_destination')
+        date=request.POST.get('date')
+        no_of_person=request.POST.get('no_of_person')
+        vacation_type=request.POST.get('vacation_type')
+        en=EnqInsert(name=name,city=city,email=email,phone_number=phone_number,travel_destination=travel_destination,date=date,no_of_person=no_of_person,vacation_type=vacation_type)
+        en.save()
+        messages.add_message(request, messages.INFO, 'Your Profile has updated successfully!')
+    return render(request, "manali.html")
+
+def thailand(request):
+    if request.method=='POST':
+        
+        name=request.POST.get('name')
+        city=request.POST.get('city')
+        email=request.POST.get('email')
+        phone_number=request.POST.get('phone_number')
+        travel_destination=request.POST.get('travel_destination')
+        date=request.POST.get('date')
+        no_of_person=request.POST.get('no_of_person')
+        vacation_type=request.POST.get('vacation_type')
+        en=EnqInsert(name=name,city=city,email=email,phone_number=phone_number,travel_destination=travel_destination,date=date,no_of_person=no_of_person,vacation_type=vacation_type)
+        en.save()
+        messages.add_message(request, messages.INFO, 'Your Profile has updated successfully!')
+    return render(request, "thailand.html")
+
+def packages(request):
+        return render(request, "packages.html")
+
+def header(request):
+        return render(request, "header.html")
+
+def saveenq(request):
+    if request.method=='POST':
+        
+        name=request.POST.get('name')
+        city=request.POST.get('city')
+        email=request.POST.get('email')
+        phone_number=request.POST.get('phone_number')
+        travel_destination=request.POST.get('travel_destination')
+        date=request.POST.get('date')
+        no_of_person=request.POST.get('no_of_person')
+        vacation_type=request.POST.get('vacation_type')
+        en=EnqInsert(name=name,city=city,email=email,phone_number=phone_number,travel_destination=travel_destination,date=date,no_of_person=no_of_person,vacation_type=vacation_type)
+        en.save()
+        messages.add_message(request, messages.INFO, 'Your Profile has updated successfully!')
+    return render(request, 'home1.html')
+
+def privacy(request):
+        return render(request, "privacy.html")
+
+def base(request):
+    if request.method=='POST':
+        mail=request.POST.get('mail')
+        en=Subscription(mail=mail)
+        en.save()
+        messages.add_message(request, messages.INFO, 'Your Subscribe has updated successfully!')
+    return render(request, "home1.html")
+        
+def subscription(request):
+    # if request.method=='POST':
+        # mail=request.POST.get('mail')
+        # sub=Subscription(mail=mail)
+        # sub.save()
+        # messages.add_message(request, messages.INFO, 'Your Subscribe has updated successfully!')
+        # html_template = 'subscription.html'
+        # html_message = render_to_string(html_template)
+        # subject = 'Welcome to Service-Verse'
+        # email_from = settings.EMAIL_HOST_USER
+        # recipient_list = [mail]
+        # message = EmailMessage(subject, html_message,email_from, recipient_list)
+        # message.content_subtype = 'html'
+        # message.send()
+    return render(request, "home1.html")
+
+
