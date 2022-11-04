@@ -1,0 +1,199 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Online Book Store </title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'assets/css/home.css' %}">
+        <link href="static">
+    </head>
+    <body>
+        <div id="fixedheader">
+            <div id="headertop">
+                <div class="wrap">
+                    <div class="leftcol">
+                        <a href="https://www.commonfolks.in/contact-us"><span class="contact"> Contact us</span></a>
+                        <a href="tel:+91-7550174762"><span class="callus"> +91-7550174762</span></a>
+                    </div>
+                    <div class="rightcol">
+                        <a href="https://www.commonfolks.in/referafriend"><span class="refer">Refer a Friend</span></a>
+            	        <a href="https://www.commonfolks.in/wishlist"><span class="wishlist"> Wishlist</span></a>
+                        <a href="https://www.commonfolks.in/orders"><span class="orders"> Orders</span></a>
+                        <span class="login triggerloginpopup"> Login / Register</span>
+                         
+                    </div>
+
+                    
+                </div>
+                
+                
+                
+
+            </div>
+            <div class="headermain">
+                <div class="wrap">
+                    <a href="https://www.commonfolks.in/"><img src="{% static 'image/commonfolks-logo-header.png' %}" alt="CommonFolks" class="headerlogo"/></a>
+                    <div class="rightcol">
+                        <div class="searchdiv">
+                            <input type="text" class="searchinput" placeholder="search by title, publisher,author..." value=""/>
+                            <button class="searchbutton"><img src="{% static 'image/search.png' %}" class="icon" alt="search"></button>
+                           
+                        </div>
+                        <span class="searchtrigger" ></span><a href="https://www.commonfolks.in/cart"><img src="{% static 'image/cart.png' %}" class="cart"></a></span>
+                            
+                        
+                        
+                       
+                    </div>
+            
+                </div>
+            </div>
+            <div id="headermenu">
+                <div class="wap">
+                    <div class="leftcol">
+                        <div class="desktopmenu">
+                            <ul class="nav-links">
+                                <li><a href=" "><img src="{% static 'image/home.png' %}" class="home" ></a></li>
+                                <li>
+                                    <a href=" ">all books<img src="{% static 'image/down.png' %}" class="down"></a>
+                                    <div class="dropdown">
+                                        <div class="content">
+                                            <div class="row">
+                                                
+                                                <ul class="row">
+                                                    <header>Allbooks</header>
+                                                    <li>children books</li>
+                                                    <li>bestsellers</li>
+                                                    <li>newreleaes</li>
+                                                    <li>tamilbooks</li>
+                                                    <li>englishbooks</li>
+                                                </ul>
+                                            </div>
+                                            <div class="row">
+                                                
+                                                <ul class="row">
+                                                    <header>noval</header>
+                                                    <li>translation</li>
+                                                    <li>calogue</li>
+                                                    <li>travalogue</li>
+                                                    <li>history</li>
+                                                </ul>
+                                            </div>
+                                            <div class="row">
+                                                
+                                                <ul class="row">
+                                                    <header>heritage</header>
+                                                    <li>tamilnadu politics</li>
+                                                    <li>chinema</li>
+                                                    <li>photograph</li>
+                                                    <li>ecology</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <a href=" ">childrenbooks<img src="{% static 'image/down.png' %}" class="down"></a>
+                                    <div class="dropdown2">
+                                        <div class="content2">
+                                            <div class="row2">
+                                                <ul class="row2">
+                                                    <header>children books</header>
+                                                    <li>bestsellers</li>
+                                                    <li>newreleaes</li>
+                                                    <li>tamilbooks</li>
+                                                    <li>englishbooks</li>
+                                                </ul>
+                                            </div>
+                                            <div class="row2">
+                                                <ul class="row2">
+                                                    <header>catagories</header>
+                                                    <li>catagories</li>
+                                                    <li>noval</li>
+                                                    <li>translation</li>
+                                                    <li>childrenstory</li>
+                                                    <li>essay</li>
+                                                </ul>
+                                            </div>
+                                            <div class="row2">
+                                                <ul class="row2">
+                                                    <header>subject</header>
+                                                    <li>science/tecnology</li>
+                                                    <li>crime/thriller</li>
+                                                    <li>action/adventure</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href=" ">offerzone</a></li>
+                                <li><a href=" ">collection</a></li>
+                                <li>
+                                    <a href=" ">catagories<img src="{% static 'image/down.png' %}" class="down"></a>
+                                    <div class="dropdown3">
+                                        <div class="content3">
+                                            <div class="row3">
+                                                <ul class="row3">
+                                                    <li>noval</li>
+                                                    <li>translation</li>
+                                                    <li>travalogue</li>
+                                                    <li>history</li>
+                                                    <li>biograhy</li>
+                                                </ul>
+                                            </div>
+                                            <div class="row3">
+                                                <ul class="row3">
+                                                    <li>letter</li>
+                                                    <li>dairy</li>
+                                                    <li>manual</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href=" ">subject<img src="{% static 'image/down.png' %}" class="down"></a>
+                                    <div class="dropdown4">
+                                        <div class="content4">
+                                            <div class="row4">
+                                                <ul class="row4">
+                                                    <li>heritage</li>
+                                                    <li>tamilpolitics</li>
+                                                    <li>chenima</li>
+                                                </ul>
+    
+                                            </div>
+                                            <ul class="row4">
+                                                <li>indianfreedomstruggle</li>
+                                                <li>indianpolitics</li>
+                                                <li>socialjustice</li>
+                                            </ul>
+
+                                                
+                                        </div>
+                                        
+                                    </div>
+                                </li>
+                                <li><a href=" ">review</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+        </div>
+        <div id="slider">
+           
+                <figure>
+                    <a href=""><img src="{% static 'image/book-store-3.jpg'%}"></a>
+                    <a href=""><img src="{% static 'image/book-store-3.jpg'%}"></a>
+                </figure>
+            
+        </div>
+
+       
+    </body>
+</html>
