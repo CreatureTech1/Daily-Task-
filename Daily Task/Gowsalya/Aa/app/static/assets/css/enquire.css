@@ -1,0 +1,39 @@
+.row {
+    background-color: #f1f1f1;
+    background-image: url('http://across2u.com/world%20background.JPG');
+    padding: 100px;
+    width: 100%;
+    justify-content: center;  
+  }
+  .main{
+    /* width:60%; */
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+  }
+  .flex{
+    display: flex;
+   
+  }
+  
+    #footer {
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+      margin-top: 20px;
+    }
+    .call{
+      text-decoration: none;
+      height: 40px;
+      width: 40px;
+  }
+  #vacation{
+    width:200px;   
+    background: none;
+   }
+  .button{
+    background-color:  rgb(247, 251, 7);
+    padding: 10px;
+  }
+  
+  

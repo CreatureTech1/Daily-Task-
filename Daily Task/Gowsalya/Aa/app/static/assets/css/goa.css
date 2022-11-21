@@ -1,0 +1,247 @@
+/* menubar */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+
+  /*enquire */
+  p.b {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .side {
+    flex: 70%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  /* Main column */
+.main {
+    flex: 20%;
+    background-color: white;
+    padding: 20px;
+  }
+  button{
+    background-color:  rgb(247, 251, 7);
+    padding: 10px;
+  }
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(249, 249, 249);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(6, 8, 10);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(247, 251, 7);
+  }
+  /* main menubar */
+
+*
+{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+.menu-bar
+{
+  overflow: hidden;
+  background-color:white;
+  text-align: center;
+}
+
+
+.menu-bar ul
+{
+  display:flex;
+  justify-content: flex-start;
+  list-style: none;
+  color:white;
+  margin:0;
+}
+
+.menu-bar ul li{
+display: flex;
+align-items: center;
+justify-content: center;
+  width:130px;
+  /* padding:10px; */
+}
+.menu-bar ul > .aadiran{
+ 
+  width:150px;
+  height:50px;
+
+}
+.menu-bar ul li a
+{
+  text-decoration: none;
+  color:black;
+}
+.active, .menu-bar ul li:hover{
+  background: yellow;
+  border-radius: 3px;
+  
+}
+.sub-menu
+{
+  display: none;
+}
+.menu-bar ul li:hover .sub-menu
+{
+  display: block;
+  position: absolute;
+  background:white;
+  margin-top: 330px;
+  z-index: 1;
+  
+}
+.menu-bar ul li:hover .sub-menu ul{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+/* submenu1 */
+.sub-menu1
+{
+  display: none;
+}
+.menu-bar ul li:hover .sub-menu1
+{
+  display: block;
+  position: absolute;
+  background:white;
+  margin-top: 175px;
+  z-index: 1;
+  
+}
+.menu-bar ul li:hover .sub-menu1 ul{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+
+
+.split li a
+{
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  /* list-style: none; */
+}
+ .common
+ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+ 
+.split li:hover
+{
+  border-radius: 3px; 
+  background-color: yellow; 
+  padding: 0px;
+  display: block;
+}
+
+
+
+/* section */
+
+.root
+{
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+section{
+  padding-top: 4rem;
+  width: 50%;
+  margin: auto;
+}
+details[open] summary ~ *
+{
+  animation:open 0.3s ease-in-out;
+}
+@keyframes open
+{
+  0%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+details summary::-webkit-details-marker
+{display: none;
+}
+details summary
+{
+  width: 100%;
+  padding: 0.5rem 0;
+  border-top: 1px solid black;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: 300;
+  list-style:none;
+}
+#contact{
+  background-color: none;
+}
+#contact select {
+  width: 180px;
+  background-color: none;
+}
+#whatsappchat{
+  text-decoration: none;
+  height: 25px;
+  width:25px;
+  /* float: left; */
+  margin-bottom:40px;
+  /* position: relative; */
+  /* padding-top: 0.5px; */
+  position: fixed;
+  /* top:0; */
+  left:0;
+  bottom:0;
+ }
+
+
+footer {
+  /* padding: 20px; */
+  text-align: center;
+  /* background: #ddd; */
+  margin-top: 20px;
+}
