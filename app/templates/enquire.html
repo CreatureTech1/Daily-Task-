@@ -1,0 +1,84 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="{%  static 'assets/css/enquire.css' %}">
+    
+    <title>Enquire Now!</title>
+  </head>
+  <body>
+    <div class="flex">
+<div class="row">
+    <div class="side"><br><br><br>
+      <h1 style="text-align:center">Stay Connected 
+      <p class="p2"><img src="https://cdn.icon-icons.com/icons2/1369/PNG/512/-call_90518.png" alt="image" class="call" /></p>9092105558</h1>
+     
+      <h1 style="text-align:center">
+        <p class="p2"><img src="https://cdn-icons-png.flaticon.com/512/761/761755.png"alt="image" class="call" /></p>aadiranholidays@gmail.com</h1>
+    </div>  
+    </div>
+    <div class="main">
+      <h2>Enquire Now</h2>
+      <form method="POST" autocomplete="off">
+        {% csrf_token %}
+        <!-- {{ form.as_p }} -->
+     
+      
+          <input type="text" id="fname" name="fname" placeholder="Name" Required>
+          <br>
+          <br>
+      
+          <input type="text" id="lname" name="lname" placeholder="City of Residencee" Required>
+          <br>
+          <br>
+      
+          <input type="email" id="email" name="email" placeholder="Email Address" Required>
+          <br>
+          <br>
+          <input type="number" id="mobile" name="mobile" placeholder="Phone Number" Required>
+          <br>
+          <br>
+          <input type="text" id="destination" name="destination" placeholder="Travel Destination" Required>
+          <br>
+          <br>
+          <input type="date" id="date" name="date" placeholder="Date of Travel" Required>
+          <br>
+          <br>
+          <input type="number" id="number" name="number" placeholder="No. of People" Required>
+          <br>
+          <br>
+          <select id="vacation" name="vacation">
+            <option value="volvo">Vacation Type</option>
+            <option value="saab">HoneyMoon</option>
+            <option value="fiat">Friends Trip</option>
+            <option value="audi">Family Trip</option>
+          </select>
+          <br>
+          <br>
+          <button class="button">Enquire Now</button>
+        
+      </form>
+  
+    </div>
+    </div>
+    <br><br><br><br>
+
+  <footer id="footer-copyright" style="text-align:center;">
+    <p>&copy; Creature Technology, Ltd. All Rights Reserved.</p>
+  </footer>
+  
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>

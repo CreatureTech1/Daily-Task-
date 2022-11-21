@@ -1,0 +1,48 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width:500px;
+    height: 500px;
+
+    box-shadow: 4px 8px 16px 4px rgba(0, 0.3, 0, 0.3);
+    background: rgb(197, 212, 172);
+
+}
+label{
+    
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+select{
+     width: 250px;
+     height: 50px;
+     border: 2px solid rgb(8, 182, 235);
+
+}
+
+.date input{
+    width: 150px;
+    height: 50px;
+    border: 2px solid rgb(8, 182, 235);
+}
+.search{
+    
+    background: rgb(8, 203, 237);
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    color: aliceblue;
+
+    font-size: 15px;
+
+}
+#search{
+    display: flex;
+    justify-content: center;
+}

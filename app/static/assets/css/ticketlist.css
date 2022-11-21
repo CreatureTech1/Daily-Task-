@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1000px;
+    height: 230px;
+    border: 1px solid rgb(73, 6, 6);
+    padding: 15px;
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: rgba(188, 225, 245, 0.947);
+}
+h4{
+    margin-left: 300px;
+    margin-top: -22px;
+    width: 40px;
+    height: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(85, 197, 85, 0.947);
+}
+.rupees{
+    display: flex;
+    justify-content: center;
+
+
+}
+.p1{
+    margin-left: 600px;
+    margin-top: -22px;
+}
+pre{
+    margin-top: 25px;
+    font-family: sans-serif;
+}
+h3{
+    margin-top: 35px;
+}
+
+hr{
+    margin-top: 10px;
+}
+.p2{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    margin-top: 5px;
+    text-decoration: none;
+    color: rgb(246, 29, 29);
+}
+hr{
+    width: 800px;
+}
+.a{
+    margin-top: 20px;
+    margin-left: -30px;
+    text-decoration: none;
+    color: rgb(0, 4, 1);
+}
+ul{
+    display: inline-flex;
+    list-style: none;
+
+}
+ul li{
+    padding: 0px 30px ;
+    text-decoration: none;
+}
+ul li a{
+    text-decoration: none;
+    color: rgba(11, 3, 68, 0.663);
+}
+.b{
+    margin-left: 815px;
+    margin-top: -226px;
+    width: 200px;
+    height: 260px;
+    background: rgb(239, 210, 64);
+}
+.b p{
+    margin-left: 80px;
+}
+.b h2{
+    font-size: 30px;
+}
+.b input{
+    margin-left: 50px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: rgb(7, 115, 183);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
