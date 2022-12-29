@@ -1,0 +1,4 @@
+from pyfacebook import GraphAPI
+api = GraphAPI(access_token="EAAGlTazvDuoBADWZComNSFZCfthib5WT1i80mkpiBqxLMD3y6O1ldl9UYFpYFow9o72Ylkkyduv9dz8dicAGpEJOZC5EuR5xyL2F23XYNlPl0Ht8HZA2S4asnP1gkgiZBigO3660bRYsmEnJ94G04OMNcaJ279rJ1UXe9kvjzdl2ZBgLqNSdwvYQO43ZCDTO2X0yXzlgBVx1AhBkpZA5TFPQ6P584FJFdM4KMRn5FqLZB6CZC2Va77kBZA9ZCCZB5iIH2E0MZD")
+response = api.get_object(object_id="20531316728")
+print(response)
