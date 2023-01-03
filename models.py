@@ -1,7 +1,16 @@
 from django.db import models
 
 # Create your models here.
-class Country(models.Model):
-    name = models.CharField(max_length=100)
-    capital = models.CharField(max_length=100)
-    area = models.IntegerField(help_text="(in square kilometers)")
+class UserDetails(models.Model):
+    userid = models.IntegerField
+    username = models.CharField(max_length=100)
+    email = models.EmailField(max_length=100)
+
+
+from django.db import models
+
+class FacebookResponse(models.Model):
+    facebook_id = models.CharField(max_length=255)
+    name = models.CharField(max_length=255)
+    email = models.EmailField()
+    
